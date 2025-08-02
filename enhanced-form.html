@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showcase: HTML5 Features</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      max-width: 900px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: auto;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Showcase Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a complete HTML5 form with native validation.</p>
+  </header>
+
+  <!-- List Section -->
+  <section>
+    <h2>Popular Web Technologies</h2>
+    <h3>Frontend Languages</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3>Backend Technologies</h3>
+    <ol>
+      <li>Node.js</li>
+      <li>Python (Django/Flask)</li>
+      <li>PHP</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Web Browser Market Share (2025)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Market Share</th>
+          <th>Platform</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chrome</td>
+          <td>65%</td>
+          <td>Cross-platform</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>18%</td>
+          <td>macOS, iOS</td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>6%</td>
+          <td>Cross-platform</td>
+        </tr>
+        <tr>
+          <td>Edge</td>
+          <td>5%</td>
+          <td>Windows</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>HTML5 Media Examples</h2>
+
+    <h3>Image</h3>
+    <img src="https://via.placeholder.com/600x200" alt="Placeholder banner" width="100%" />
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="100%" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Contact Us</h2>
+    <form action="#" method="POST" autocomplete="on" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 1234567890" />
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required placeholder="Subject of your message" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10" placeholder="Your message here..." rows="5"></textarea>
+
+        <label for="rating">How would you rate our site?</label>
+        <select id="rating" name="rating" required>
+          <option value="">--Please choose an option--</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="fair">Fair</option>
+          <option value="poor">Poor</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Preferences</legend>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked />
+          Subscribe to our newsletter
+        </label>
+
+        <label>
+          <input type="radio" name="contact_method" value="email" required />
+          Contact me via Email
+        </label>
+
+        <label>
+          <input type="radio" name="contact_method" value="phone" required />
+          Contact me via Phone
+        </label>
+
+        <label for="referral">How did you hear about us?</label>
+        <input type="text" id="referral" name="referral" readonly value="Online Search" />
+      </fieldset>
+
+      <input type="submit" value="Submit Form" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Showcase. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
